@@ -58,3 +58,5 @@ Button.prototypes = {
     "accent"
   ]),
 };
+
+export { Button }
