@@ -70,9 +70,9 @@ const Input = React.forwardRef(
 
 Input.propTypes = {
   className: PropTypes.string,
-  name: PropTypes.string,
-  placeholder: PropTypes.string,
-  type: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   shape: PropTypes.oneOf(["round", "circle"]),
   size: PropTypes.oneOf(["xs", "sm", "lg"]),
   variant: PropTypes.oneOf(["fill", "outline"]),
