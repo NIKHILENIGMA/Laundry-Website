@@ -13,12 +13,12 @@ function ProjectRoutes() {
     <Suspense fallback={<>Loading...</>}>
         <Router>
             <Routes>
-                <Route path='/' element={<MainLayout />}/>
-                <Route path='' element={<Home />}/>
-                <Route path='order' element={<Order />}/>
-                <Route path='payment' element={<Payment />}/>
-                <Route path='services' element={<Services />}/>
-
+                <Route path='/' element={<MainLayout />}>
+                  <Route path='' index  element={<Home />}/>
+                  <Route path='order' element={<Order />}/>
+                  <Route path='payment' element={<Payment />}/>
+                  <Route path='services' element={<Services />}/>
+                </Route>
                 <Route path='*' element={<NotFound/>} />
             </Routes>  
         </Router>
