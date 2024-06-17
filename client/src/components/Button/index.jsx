@@ -32,12 +32,13 @@ function Button({
   rightIcon,
   className,
   children,
+  ...restProps
 }) {
   return (
     <button
       className={`${className} ${(shape && shapes[shape]) || ""} ${
         (variant && variants[variant]?.[color]) || ""
-      } ${(size && sizes[size]) || ""}`}
+      } ${(size && sizes[size]) || ""}`} {...restProps}
     >
       {!!leftIcon && leftIcon}
       {children}
