@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <section className="w-full h-[50vh] flex mt-14">
+    <section className="w-full h-[50vh] flex mt-14 bg-[#F3F3F3]">
       <div className="text-black w-[50%] section-1">
         <div className="flex flex-col items-start justify-center h-full pl-14 ">
           <h2 className="my-5 text-[40px] font-bold text-start">TrendCraze</h2>
