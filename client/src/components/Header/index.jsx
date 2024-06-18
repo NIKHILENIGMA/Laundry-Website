@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <div className="flex items-center justify-between w-full mx-auto border-b-2 h-14">
+    <div className="sticky top-0 z-10 flex items-center justify-between w-full mx-auto bg-[#F3F3F3] border-b-2 h-14">
       <div className="flex items-center h-full w-[20%] justify-center text-lg">
         <NavLink to="/">Logo</NavLink>
       </div>
